@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(./img/imagen1.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;   
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/*PARTE SUPERIOR*/
+.contenedor_De_todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja_De_Atras{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(150px);
+    background-color: yellowgreen;
+}
+
+.caja_De_Atras div{
+    margin: 100px 40px;
+    transition: all 500ms;
+}
+
+.caja_De_Atras div p,
+.caja_De_Atras div button{
+    margin-top: 30px;
+}
+
+.caja_De_Atras div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_De_Atras{
+    padding: 10px 40px;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transform: all 300ms;
+}
+
+.caja_De_Atras button{
+    padding: 5px;
+}
+
+.caja_De_Atras button:hover{
+    background: greenyellow;
+    color: black;
+}
+
+/*FORMULARIOS DE INICIO Y REGISTRO*/
+.contenerdo_inicio_de_sesion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -195px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenerdo_inicio_de_sesion form{
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(167, 167, 167);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenerdo_inicio_de_sesion form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contenerdo_inicio_de_sesion form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    outline: none;
+}
+
+.contenerdo_inicio_de_sesion form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: greenyellow;
+    color: black;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_inicio_sesion{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_de_registro{
+    display:none;
+}
+
+/*REPONSIVE DESIGN*/
+
+@media screen and (max-width: 850px) {
+    
+    main{
+        margin-top: 50px;
+    }
+
+    .caja_De_Atras{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_De_Atras div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*FORMULARIO*/
+
+    .contenerdo_inicio_de_sesion{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenerdo_inicio_de_sesion form{
+        position: relative;
+    }
+    
+}
